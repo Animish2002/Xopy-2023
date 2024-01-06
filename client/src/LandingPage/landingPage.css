@@ -1,0 +1,279 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  padding-left: 40px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.mainImage img{
+  width: 650px;
+  padding: 2px;
+  border: 3px solid#ff0;
+  border-radius: 15px 50px 800px 5px;
+}
+
+.navbar .nav-links {
+  padding-right: 70px; /* Adjust the right padding as needed */
+}
+
+.navbar a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #000;
+  position: relative;
+}
+
+.navbar a:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0;
+  bottom: -5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 20px;
+  margin-top: 60px;
+}
+
+.left-section {
+  max-width: 50%;
+  padding-left: 45px ;
+}
+
+.left-section h1{
+  font-size: 60px
+}
+.left-section h1::after {
+  content: "";
+  display: block;
+  width: 9%;
+  height: 2px;
+  background-color: #ff0;
+  margin-top: -5px;
+}
+
+.left-section p {
+  margin-bottom: 0.3em;
+  color: #555;
+  width: 35px;
+  height: 23px;
+}
+
+.left-section button {
+  background-color: rgba(252, 218, 5, 1);
+  border-radius: 37px;
+  padding: 10px 60px;
+  cursor: pointer;
+}
+.nav-links button{
+  background-color: rgba(252, 218, 5, 1);
+  border-radius: 37px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.right-section img {
+  max-width: 100%;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.footer p {
+  cursor: pointer;
+}
+
+/* Define some variables for colors and fonts */
+:root {
+  --main-color:  rgba(255, 251, 224, 3);
+  --accent-color: #000;
+  --footer-font: Arial, sans-serif;
+}
+
+/* Style the footer container */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--main-color);
+  color: var(--accent-color);
+  font-family: var(--footer-font);
+}
+
+/* Style the footer logo */
+.footer-logo {
+  width: 20%;
+  max-width: 200px;
+}
+
+/* Style the footer links */
+.footer-links {
+  width: 100%; /* Adjust the width as needed */
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly */
+  list-style: none;
+}
+
+.footer-links li {
+  margin: 0; /* Remove the margin to ensure equidistant spacing */
+}
+
+.footer-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* Style the footer social icons */
+.footer-social {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-social li {
+  margin: 0 5px;
+}
+
+.footer-social img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Style the footer call to action */
+.footer-cta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-cta h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-cta button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+/* Style the footer info */
+.footer-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.team-section {
+  text-align: center;
+  background-color: rgb(233, 194, 238);
+  color: white;
+  padding: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}

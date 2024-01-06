@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="landingPage.css">
+  <title>Xopy Landing Page</title>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo">
+    <img src="WhatsApp Image 2023-10-27 at 16.26 1.png" alt="Logo">
+  </div>
+  <div class="nav-links">
+    <a href="#" onclick="loadPage('home')">Home</a>
+    <a href="#" onclick="loadPage('product')">Product</a>
+    <button onclick="redirectToLogin()" style="color: rgba(34, 40, 49, 1);">Login</button>
+  </div>
+</div>
+
+<div class="container" id="mainContent">
+  <div class="left-section">
+    <h1>Xopy</h1>
+    <p><h4>Ever worried about the privacy of your data and security when you share your files for printing? Ever been caught in the long queue lines right before an important meeting or interview? We bring a simple solution to all of it.</h4></p>
+    <button onclick="createAccount()">Create an account &rarr;</button>
+  </div>
+  <div class="right-section">
+    <img id="mainImage" src="image 2.png"  />
+  </div>
+</div>
+
+<div class="footer">
+  <p onclick="scrollDown()">Swipe up to scroll down</p>
+</div>
+
+<script>
+  function loadPage(page) {
+    var mainContent = document.getElementById('mainContent');
+    var mainImage = document.getElementById('mainImage');
+
+    if (page === 'home') {
+      mainContent.innerHTML = `
+        <div class="left-section">
+          <h1>Xopy</h1>
+          <p><h4>Ever worried about the privacy of your data and security when you share your files for printing? Ever been caught in the long queue lines right before an important meeting or interview? We bring a simple solution to all of it.</h4></p>
+          <button onclick="createAccount()">Create an account &rarr;</button>
+        </div>
+        <div class="right-section">
+          <img src="image-source.png" alt="Illustration of a person working at a printing station" id="mainImage" />
+        </div>
+      `;
+      mainImage.src = "image-source.png";
+    } else if (page === 'product') {
+      // Fetch content from product.html
+      fetch('product.html')
+        .then(response => response.text())
+        .then(data => {
+          mainContent.innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Error fetching product page content:', error);
+        });
+    }
+  }
+</script>
+
+<!-- //////////Meet the Team Section////// -->
+<div class="team-section">
+  <h1>Meet the Team</h1>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="img1.jpg" alt="Anushka" style="width:100%">
+        <div class="container">
+          <h2>Anushka Bhosale</h2>
+          <p class="title">Founder</p>
+          <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>jane@example.com</p> -->
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="img2.jpg" alt="Animish" style="width:100%">
+        <div class="container">
+          <h2>Animish Chopade</h2>
+          <p class="title">Founder</p>
+          <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>mike@example.com</p> -->
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="img3.jpg" alt="Vrushabh" style="width:100%">
+        <div class="container">
+          <h2>Vrushabh Kulkarni</h2>
+          <p class="title">Founder</p>
+          <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>john@example.com</p> -->
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- /////////Footer section/////// -->
+<div class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+     
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <ul>
+        <li><a href="#"><img src="facebook-icon.png" alt="Facebook" /></a></li>
+        <li><a href="#"><img src="twitter-icon.png" alt="Twitter" /></a></li>
+        <li><a href="#"><img src="instagram-icon.png" alt="Instagram" /></a></li>
+        <li><a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a></li>
+      </ul>
+    </div>
+    <div class="footer-cta">
+      <h3>Ready to print smarter and faster?</h3>
+      <button onclick="createAccount()">Create an account →</button>
+    </div>
+    <div class="footer-info">
+      <p>© 2023 Xopy. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Sitemap</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

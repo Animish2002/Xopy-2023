@@ -1,0 +1,128 @@
+.header-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.center{
+         display: flex;
+        justify-content: center;
+        align-items: center;    
+}
+.file-editing-components{
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  height: px;
+  
+}
+
+.file-input-label {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px dashed #2C2E43; 
+        background-color: #2C2E43;
+        color: #fff; 
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+      }
+      
+      .file-input-label:hover {
+        background-color: #B2B1B9; 
+        border-color: #B2B1B9;
+      }
+
+     
+.rectangle-box {
+        padding: 5px 85px; 
+        background-color: #fff; 
+        color: #2C2E43; 
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: relative;
+        border-radius: 15px; 
+      }
+      
+      .rectangle-box::before {
+        content: '';
+        position: absolute;
+        top: -4px; 
+        left: -4px; 
+        right: -4px;
+        bottom: -4px; 
+        border: 2px solid #2C2E43; 
+        border-radius: 15px; 
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+
+
+    
+.file-editing-components form {
+        background-color: #f8f8f8; 
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+      }
+      
+      .file-editing-components h5 {
+        font-size: 1.2rem;
+        color: #2C2E43;
+        margin-bottom: 10px;
+      }
+      
+      .file-editing-components label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #2C2E43;
+      }
+      
+      .file-editing-components select,
+      .file-editing-components input[type="number"],
+      .file-editing-components input[type="checkbox"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: #2C2E43;
+      }
+      
+      .file-editing-components select {
+        background-color: #fff;
+      }
+      
+      .file-editing-components input[type="number"] {
+        background-color: #fff;
+      }
+      
+      .file-editing-components input[type="checkbox"] {
+        margin-top: 5px;
+      }
+      
+      .file-editing-components button[type="submit"] {
+       
+        justify-content: center;
+        align-items: center;
+        background-color: #2C2E43;
+        color: #fff;
+        border: none;
+        padding: 5px 50px;
+        border-radius: 15px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .file-editing-components button[type="submit"]:hover {
+        background-color: #4d4f64; 
+      }
+      
+
+
+/* Changes made by Vrushabh Kulkarni */

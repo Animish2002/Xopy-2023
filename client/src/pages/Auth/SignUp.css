@@ -1,0 +1,61 @@
+/* Base styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Styles for the sign-up form wrapper */
+.signup-form {
+  background-color: #ffffdd; /* Light cream background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; /* Adjust width as necessary */
+}
+
+/* Styles for form inputs */
+.signup-form input[type="text"],
+.signup-form input[type="tel"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for the file upload input */
+.signup-form input[type="file"] {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Styles for the submit button */
+.signup-form button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffc107; /* Yellow background for the button */
+  color: #333;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Title styles */
+.signup-form h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,75 @@
+/* Base styles to ensure the form is centered and looks clean */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Styles for the login form wrapper */
+.login-form {
+  background-color: #ffffdd; /* A light cream background as seen in the image */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 320px; /* Or the width according to the image proportions */
+}
+
+/* Styles for the form elements and spacing */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc; /* A light grey border */
+  border-radius: 4px;
+}
+
+/* Adjust the color and border of the input if it has validation error */
+.is-invalid .form-control {
+  border-color: #ff3860; /* A red border color for invalid inputs */
+}
+
+/* Error message styles */
+.invalid-feedback {
+  color: #ff3860; /* Red color for error messages */
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Styles for the login button */
+.btn-primary {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffc107; /* Yellow background color as in the image */
+  color: #333; /* Dark text for contrast */
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #e0a800; /* A darker yellow on hover */
+}
+
+/* Link to sign up page */
+.login-form p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login-form a {
+  color: #007bff; /* A bright blue for the link as is common */
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
